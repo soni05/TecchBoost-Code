@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+class Fibnocci
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter Number:");
+		 int n=sc.nextInt();
+	    int Fib=fibnocci(n);
+	    System.out.println("Fibnocci IS :" + Fib);
+	   
+	}
+	 
+	 public static int fibnocci(int n){
+	 	 if(n==0 || n==1)
+	 	   return 1;
+	 	    return fibnocci(n-1) +fibnocci(n-2);
+	 }
+	
+	
+	
+	
+}

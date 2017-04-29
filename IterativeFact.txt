@@ -1,0 +1,24 @@
+
+import java.util.Scanner;
+class Factorial{  
+	
+	  
+	 	public static void main (String[] args) throws java.lang.Exception
+     	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter Number:");
+		 int n=sc.nextInt();
+	    int Fact=factorial(n);
+	    System.out.println("FactoriAL IS :" + Fact);
+	   
+     	}
+    
+  public static   int factorial(int n)
+    {
+      int i,fact=1;  
+       for(i=1;i<=n;i++){    
+         fact=fact*i;    
+       }    
+        return fact;  
+ }  
+}  

@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+
+class Factorial
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter Number:");
+		 int n=sc.nextInt();
+	    int Fib=fibnocci(n);
+	    System.out.println("Fibnocci IS :" + Fib);
+	   
+	}
+	 
+	 public static int fibnocci(int n){
+	      int a = 0, b = 1, c, i;
+           if( n == 0)
+                return a;
+               for (i = 2; i <= n; i++)
+                   {
+                         c = a + b;
+                          a = b;
+                          b = c;
+                  }
+              return b;
+}
+	   
+
+	
+}
